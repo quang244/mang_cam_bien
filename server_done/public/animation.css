@@ -1,0 +1,74 @@
+body {
+  font-family: 'Alatsi', sans-serif;
+  margin: 0;
+  /* overflow: hidden; */
+  background: black;
+}
+
+#IOT_dashboard {
+  position: absolute;
+  top: 20px;
+  left: 120px;
+}
+
+/* biểu đồ */
+canvas {
+  width: 100%;
+}
+
+
+/* css for check box */
+        input[type=checkbox] {
+            visibility: hidden;
+        }
+        .checkboxThree {
+          width: 160px;
+          height: 60px;
+          background: #333;
+          margin: 35px 60px 0px 40px;
+      
+          border-radius: 50px;
+          position: relative;
+      }
+
+      .checkboxThree:before {
+          content: 'On';
+          position: absolute;
+          top: 19px;
+          left: 13px;
+          height: 22px;
+          color: #26ca28;
+          font-size: 16px;
+      }
+      .checkboxThree:after {
+          content: 'Off';
+          position: absolute;
+          top: 19px;
+          left: 114px;
+          height: 22px;
+          color: red;
+          font-size: 16px;
+      }
+      .checkboxThree label {
+          display: block;
+          width: 92px;
+          height: 42px;
+          border-radius: 50px;
+      
+          -webkit-transition: all .5s ease;
+          -moz-transition: all .5s ease;
+          -o-transition: all .5s ease;
+          -ms-transition: all .5s ease;
+          transition: all .5s ease;
+          cursor: pointer;
+          position: absolute;
+          top: 9px;
+          z-index: 1;
+          left: 12px;
+          background: #ddd;
+      }
+
+      .checkboxThree input[type=checkbox]:checked + label {
+          left: 60px;
+          background: #26ca28;
+      }
